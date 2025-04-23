@@ -256,3 +256,35 @@ body {
   .stand-for-list li{ font-size: 1rem; }
   .calendar-section h2 { font-size: 2rem; }
 }
+
+.opportunities-section
+{
+  padding: 4rem 2rem;
+  max-width: 1500px;
+  margin: 4rem auto;
+  text-align: center;
+  background: transparent;
+}
+
+.opportunities-container
+{
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  height: 0;
+  padding-bottom: 75%;
+  margin: 0 auto;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.opportunities-container iframe
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 1rem;
+}
