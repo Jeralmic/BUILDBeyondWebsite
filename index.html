@@ -15,7 +15,21 @@
 
     <nav class="nav-links">
       <a href="./index.html">Home</a>
-      <a href="#about">About</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          About
+          <svg class="dropdown-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="dropdown-content">
+          <a href="about-mission.html">Mission</a>
+          <a href="about-team.html">Team</a>
+        </div>
+      </div>
+      
       <div class="dropdown">
         <button class="dropbtn">
           Resources
@@ -31,30 +45,62 @@
           <a href="opportunities.html">Opportunities</a>
         </div>
       </div>
-      <a href="#Connect">Connect</a>
+      <a href="https://forms.gle/TZujvXNzkUqEUSfe8" target="_blank" rel="noopener noreferrer">Join</a>
     </nav>
   </header>
 
   <section class="hero-top">
     <div class="hero-image"></div>
-    <div class="hero-text">
-      <h1>
-        <span class="highlight">We are</span>
-        <span class="arrow">›</span>
-        <span id="typed-text"></span><span class="cursor"></span>
-      </h1>
-
-      <div class="hero-subtext">
-        <p>We are students from all kinds of majors and backgrounds: artists, engineers, doers and everyone in between.</p>
-        <p>If you care about ideas, community and doing real things that matter, you’ll fit right in.</p>
+    <div class="homepage-hero-text">
+      <h1 class="homepage-hero-title">BUILD Beyond Club</h1>
+      <div class="join-button-wrapper">
+        <a class="homepage-join-button" href="https://forms.gle/TZujvXNzkUqEUSfe8" target="_blank" rel="noopener noreferrer">
+          Join Us
+        </a>
+        <a class="groupme-icon" href="https://groupme.com/join_group/107129513/bxBZJCpu" target="_blank" rel="noopener noreferrer">
+          <img src="images/GroupMe_gradient_logo.png" alt="Join GroupMe">
+        </a>
       </div>
+      
+    </div>
+    
+  </section>
+  
+  
 
+
+  <section class="mission-section">
+    <div class="mission-content">
+      <div class="mission-carousel">
+        <div class="carousel-images">
+          <img src="images/img_8612.jpg" alt="Slide 1" class="active">
+          <img src="images/img_8613.jpg" alt="Slide 2">
+          <img src="images/img_8614.png" alt="Slide 3">
+        </div>
+        <div class="carousel-dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
+      </div>
+      
+      <div class="mission-text-container">
+        <p class="mission-heading">Mission</p>
+        <p class="mission-text">
+          The mission of BUILD Beyond is to strengthen BUILD Boston’s network of alumni and their friends through community exchange, storytelling, and networking with each other and BUILD stakeholders. This goal is realized through our shared belief in the transformative power of entrepreneurial education and student voice.
+        </p>
+        <a href="about-mission.html"><button class="mission-button">Learn more</button></a>
+      </div>
     </div>
   </section>
+  
+  
+  
+  
 
 
    <section id="calendar" class="calendar-section">
-    <h2>Calendar</h2>
+    <h2>Upcoming events</h2>
     <div class="calendar-container">
       <iframe
         src="https://calendar.google.com/calendar/embed?src=c_c67c1bda298aa082119ccb1c247aa680ba50d371f149007ef835b9478f5be889%40group.calendar.google.com&ctz=America%2FNew_York"
@@ -63,6 +109,14 @@
         loading="lazy"
       ></iframe>
     </div>
+    <div class="calendar-link">
+      <a class="calendar-button" href="https://calendar.google.com/calendar/u/0/r?cid=c_c67c1bda298aa082119ccb1c247aa680ba50d371f149007ef835b9478f5be889@group.calendar.google.com"
+         target="_blank" rel="noopener noreferrer">
+        Add to your Google Calendar
+      </a>
+    </div>
+    
+    
   </section>
 
 

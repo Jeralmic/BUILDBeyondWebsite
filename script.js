@@ -1,4 +1,4 @@
-const words = ['students', 'entrepreneurs', 'alumni', 'innovators', 'leaders', 'builders'];
+const words = ['Leaders', 'entrepreneurs', 'innovators', 'builders'];
 let txtEl = document.getElementById('typed-text');
 let cursorEl = document.querySelector('.cursor');
 let wordIdx = 0, charIdx = 0;
@@ -25,4 +25,33 @@ function erase() {
 
 document.addEventListener('DOMContentLoaded', () => {
   setTimeout(type, delay);
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll(".carousel-images img");
+  const dots = document.querySelectorAll(".carousel-dots .dot");
+  let index = 0;
+
+  function showSlide(i) {
+    slides.forEach((slide, idx) => {
+      slide.classList.toggle("active", idx === i);
+      dots[idx].classList.toggle("active", idx === i);
+    });
+    index = i;
+  }
+
+  function nextSlide() {
+    let next = (index + 1) % slides.length;
+    showSlide(next);
+  }
+
+  dots.forEach(dot => {
+    dot.addEventListener("click", () => {
+      const i = parseInt(dot.getAttribute("data-index"));
+      showSlide(i);
+    });
+  });
+
+  setInterval(nextSlide, 4000); // auto-slide every 4 seconds
 });
