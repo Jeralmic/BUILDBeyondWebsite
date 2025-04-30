@@ -55,3 +55,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setInterval(nextSlide, 4000); // auto-slide every 4 seconds
 });
+
+function includeHTML(id, url) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  fetch(url)
+    .then(res => {
+      if (!res.ok) throw new Error(`Failed to load ${url}`);
+      return res.text();
+    })
+    .then(html => { el.innerHTML = html; })
+    .catch(err => { console.error(err); });
+}
+
+// on DOMContentLoaded, pull in nav & footer
+document.addEventListener('DOMContentLoaded', () => {
+  includeHTML('nav-placeholder', 'nav.html');
+  includeHTML('footer-placeholder', 'footer.html');
+});

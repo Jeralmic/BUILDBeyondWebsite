@@ -642,5 +642,21 @@ body {
   margin-bottom: 1rem;
 }
 
+.nav-links .dropdown { position: relative; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--light);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
 
 
