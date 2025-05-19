@@ -1,22 +1,42 @@
-<nav class="navbar">
-    <a href="index.html" class="logo">BUILD Beyond</a>
-    <ul class="nav-links">
-      <li class="dropdown">
-        <button class="dropbtn" aria-haspopup="true" aria-expanded="false">About</button>
-        <ul class="dropdown-content">
-          <li><a href="about-mission.html">Mission</a></li>
-          <li><a href="about-team.html">Team</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Resources</button>
-        <ul class="dropdown-content">
-          <li><a href="newsletter.html">Newsletter</a></li>
-          <li><a href="calendar.html">Calendar</a></li>
-          <li><a href="opportunities.html">Opportunities</a></li>
-        </ul>
-      </li>
-    </ul>
-    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-  </nav>
+<!-- nav.html -->
+<header class="navbar">
+    <div class="logo-container">
+      <img src="images/NewBUILDLOGO.svg" alt="BUILD Beyond Logo">
+      <span class="site-title">BUILD BEYOND</span>
+    </div>
   
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+
+      <a href="https://forms.gle/TZujvXNzkUqEUSfe8" class="join-link" target="_blank" rel="noopener noreferrer">Join</a>
+  
+      <div class="dropdown">
+        <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+          About
+          <svg class="dropdown-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="dropdown-content">
+          <a href="about-mission.html">Mission</a>
+          <a href="about-team.html">Team</a>
+        </div>
+      </div>
+  
+      <div class="dropdown">
+        <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+          Resources
+          <svg class="dropdown-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="dropdown-content">
+          <a href="newsletter.html">Newsletter</a>
+          <a href="index.html#calendar">Calendar</a>
+          <a href="opportunities.html">Opportunities</a>
+        </div>
+      </div>
+    </nav>
+  </header>

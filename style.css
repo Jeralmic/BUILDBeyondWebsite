@@ -70,31 +70,23 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
-}
-
-.dropbtn {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--dark);
-  cursor: pointer;
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  z-index: 1002;
 }
 
 .dropdown-content {
-  display: none;
   position: absolute;
+  display: none;
   background-color: var(--light);
   min-width: 200px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  border-radius: 0.5rem;
   top: 100%;
   left: 0;
-  border-radius: 0.5rem;
-  z-index: 1001;
+  z-index: 1002;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block !important;
 }
 
 .dropdown-content a {
@@ -108,10 +100,6 @@ body {
 
 .dropdown-content a:hover {
   background-color: var(--gray-light);
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 .dropdown-arrow {
@@ -642,20 +630,24 @@ body {
   margin-bottom: 1rem;
 }
 
-.nav-links .dropdown { position: relative; }
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: var(--light);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.nav-links .dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 1002; /* Ensure dropdowns appear above other elements */
 }
 
-.nav-links .dropdown:hover .dropdown-content {
-  display: block;
+
+/* Push join-button to the right edge */
+.nav-links .join-container {
+  margin-left: auto;
 }
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+
 
 
 
